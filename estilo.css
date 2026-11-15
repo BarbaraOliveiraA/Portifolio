@@ -1,0 +1,59 @@
+/* Altura dos slides do carrossel */
+.carousel-item img {
+    height: 500px; /* Altura dos Slides*/
+    object-fit: cover; /* Corte nas bordas para manter a proporção sem esticar */
+}
+/* Altura das imagens dos cards de projetos */
+.project-img {
+    height: 350px; /* Altura das imagens */
+    object-fit: cover; /* Corta levemente as bordas mantendo a proporção correta */
+}
+/*Ajuste de tamanho de foto de perfil */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+/* Efeito de zoom nos cards de projetos */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2) !important;
+}
+/* Botão "voltar ao topo" */
+#btnTopo {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1030;
+}
+@supports (animation-timeline: scroll()) {
+    #btnTopo {
+        opacity: 0;
+        visibility: hidden;
+        animation: aparecer linear both;
+        animation-timeline: scroll(root block);
+        animation-range: 200px 300px;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            visibility: hidden;
+        }
+        to {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
