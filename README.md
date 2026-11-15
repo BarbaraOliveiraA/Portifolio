@@ -43,7 +43,7 @@ Os recursos visuais foram implementados no arquivo externo Estilo.css, ligado ao
 5. O botão "voltar ao topo" (#btnTopo) é um link posicionado com position: fixed. Para aparecer só depois de rolar a página, foi usada uma animação controlada pela rolagem (animation-timeline: scroll()), que deixa o botão transparente nos primeiros 200px e totalmente visível a partir de 300px. Em navegadores que não suportam esse recurso, o botão fica sempre visível, e continua funcionando.
 
 ## Link do site publicado
-https://barbaraoliveiraa.github.io/Portifolio/#
+https://barbaraoliveiraa.github.io/Portifolio/
 
 ## Como executar o projeto
 1. Faça o download deste repositório para o seu computador.
